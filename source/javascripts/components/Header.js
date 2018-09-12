@@ -1,6 +1,7 @@
 "use strict"
 
 import React from "react"
+import { IndexLink, Link } from "react-router"
 
 export default class Header extends React.Component {
 	render() {
@@ -18,25 +19,25 @@ export default class Header extends React.Component {
 		      <div className="collapse navbar-collapse" id="navbarSupportedContent">
 		        <ul className="navbar-nav">
 		          <li className="nav-item">
-		            <a className="nav-link js-scroll-trigger" href="#">Who is WeiYing</a>
+		            <Link className="nav-link js-scroll-trigger" to="about">Who is WeiYing</Link>
 		          </li>
 		          <li className="nav-item">
-		            <a className="nav-link js-scroll-trigger" href="#">Education</a>
+		            <Link className="nav-link js-scroll-trigger" to="education">Education</Link>
 		          </li>
 		          <li className="nav-item">
-		            <a className="nav-link js-scroll-trigger" href="#">Experience</a>
+		            <Link className="nav-link js-scroll-trigger" to="experience">Experience</Link>
 		          </li>
 		          <li className="nav-item">
-		            <a className="nav-link js-scroll-trigger" href="#">Projects</a>
+		            <Link className="nav-link js-scroll-trigger" to="porjects">Projects</Link>
 		          </li>
 		          <li className="nav-item">
-		            <a className="nav-link js-scroll-trigger" href="#">Skills</a>
+		            <Link className="nav-link js-scroll-trigger" to="skills">Skills</Link>
 		          </li>
 		          <li className="nav-item">
-		            <a className="nav-link js-scroll-trigger" href="#">Certificates</a>
+		            <Link className="nav-link js-scroll-trigger" to="certificates">Certificates</Link>
 		          </li>
 		          <li className="nav-item">
-		            <a className="nav-link js-scroll-trigger" href="#">Contact Me</a>
+		            <Link className="nav-link js-scroll-trigger" to="contact">Contact Me</Link>
 		          </li>
 		        </ul>
 		      </div>
