@@ -5,7 +5,6 @@ import  { about } from "../../data"
 
 export default class About extends React.Component {
 	render() {
-		console.log(about)
 		return (
 			<section className="resume-section p-3 p-lg-5 d-flex d-column" id="about">
 		        <div className="my-auto">

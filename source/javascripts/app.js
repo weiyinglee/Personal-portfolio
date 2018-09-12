@@ -10,7 +10,6 @@ import Education from "./components/Education"
 import Experience from "./components/Experience"
 import Projects from "./components/Projects"
 import Certificates from "./components/Certificates"
-import Contact from "./components/Contact"
 import Skills from "./components/Skills"
 
 const app = document.getElementById("app")
@@ -24,7 +23,6 @@ ReactDOM.render(
 	      	<Route path="projects" name="Projects" component={Projects}></Route>
 	      	<Route path="certificates" name="Certificates" component={Certificates}></Route>
 	     	<Route path="skills" name="Skills" component={Skills}></Route>
-	      	<Route path="contact" name="Contact" component={Contact}></Route>
 	      	<Redirect from="*" to="/" />
 	    </Route>
   	</Router>
