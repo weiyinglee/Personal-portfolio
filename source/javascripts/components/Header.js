@@ -28,7 +28,7 @@ export default class Header extends React.Component {
 		            <Link className="nav-link js-scroll-trigger" to="experience">Experience</Link>
 		          </li>
 		          <li className="nav-item">
-		            <Link className="nav-link js-scroll-trigger" to="porjects">Projects</Link>
+		            <Link className="nav-link js-scroll-trigger" to="projects">Projects</Link>
 		          </li>
 		          <li className="nav-item">
 		            <Link className="nav-link js-scroll-trigger" to="skills">Skills</Link>
