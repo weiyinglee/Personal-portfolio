@@ -19,7 +19,7 @@ export default class Header extends React.Component {
 		      <div className="collapse navbar-collapse" id="navbarSupportedContent">
 		        <ul className="navbar-nav">
 		          <li className="nav-item">
-		            <Link className="nav-link js-scroll-trigger" to="about">Who is WeiYing</Link>
+		            <Link className="nav-link js-scroll-trigger" to="about">About Me</Link>
 		          </li>
 		          <li className="nav-item">
 		            <Link className="nav-link js-scroll-trigger" to="education">Education</Link>

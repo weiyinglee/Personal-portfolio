@@ -1,31 +1,36 @@
 "use strict"
 
 import React from "react"
+import  { about } from "../../data"
 
 export default class About extends React.Component {
 	render() {
+		console.log(about)
 		return (
 			<section className="resume-section p-3 p-lg-5 d-flex d-column" id="about">
 		        <div className="my-auto">
-		          <h1 className="mb-0">Clarence
-		            <span className="text-primary">Taylor</span>
+		          <h1 className="mb-0">Who is 
+		            <span className="text-primary"> WEIYING LEE</span>
 		          </h1>
-		          <div className="subheading mb-5">3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
-		            <a href="mailto:name@email.com">name@email.com</a>
+		          <div className="subheading mb-5">
+		          	<div>{about.home_address}</div>
+		          	<div>{about.phone_number}</div>
+		            <a href={`mailto: ${about.email_address}`}>{about.email_address}</a>
 		          </div>
-		          <p className="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+		          <p className="lead mb-5">{about.description}</p>
+		          <h4>Also follow me on: </h4>
 		          <div className="social-icons">
-		            <a href="#">
+		            <a href="https://www.linkedin.com/in/weiyinglee/">
 		              <i className="fab fa-linkedin-in"></i>
 		            </a>
-		            <a href="#">
+		            <a href="https://www.github.com/weiyinglee">
 		              <i className="fab fa-github"></i>
 		            </a>
-		            <a href="#">
-		              <i className="fab fa-twitter"></i>
-		            </a>
-		            <a href="#">
+		            <a href="https://www.facebook.com/weiyinglee">
 		              <i className="fab fa-facebook-f"></i>
+		            </a>		            
+		            <a href="https://www.instagram.com/ericleee1009">
+		              <i className="fab fa-instagram"></i>
 		            </a>
 		          </div>
 		        </div>
