@@ -5,7 +5,7 @@
 		"home_address": "127 N.Prospectors Rd, Diamond Bar, CA, 91765",
 		"phone_number": "(409)779-6046",
 		"email_address": "weiyinglee1009@yahoo.com",
-		"description": "I am WeiYing (Eric) Lee, graduated from computer science major in Cal Poly Pomona and I am interested in web development with both front-end and back-end."
+		"description": "I am WeiYing (Eric) Lee, graduated from computer science major in Cal Poly Pomona and I am interested in web development with both front-end and back-end. Currently looking for web development jobs."
 	},
 
 	"experience": [
@@ -58,5 +58,94 @@
 		}
 	],
 
-	"skills": []
+	"skills": {
+		"programming_language": [
+			{
+				"name": "Java",
+				"icon" : "fab fa-java"
+			},
+			{
+				"name": "JavaScript",
+				"icon" : "fab fa-js-square"
+			},
+			{
+				"name": "JQuery",
+				"icon" : "devicons devicons-jquery"
+			},
+			{
+				"name": "Node.js",
+				"icon" : "fab fa-node"
+			},
+			{
+				"name": "Express.js",
+				"icon" : "fab fa-express-js"
+			},
+			{
+				"name": "Angular 1",
+				"icon" : "fab fa-angular"
+			},
+			{
+				"name": "React.js",
+				"icon" : "fab fa-react"
+			}
+		],
+
+		"web_design": [
+			{
+				"name": "HTML5",
+				"icon" : "fab fa-html5"
+			},
+			{
+				"name": "CSS3",
+				"icon" : "fab fa-css3-alt"
+			},
+			{
+				"name": "SASS",
+				"icon" : "fab fa-sass"
+			},
+			{
+				"name": "BootStrap",
+				"icon" : "devicons devicons-bootstrap"
+			}, 
+			{
+				"name": "WordPress",
+				"icon": "fab fa-wordpress"
+			}
+		],
+
+		"database": [
+			{
+				"name": "MongoDB",
+				"icon" : "devicons devicons-mongodb"
+			},
+			{
+				"name": "MySQL",
+				"icon" : "devicons devicons-mysql"
+			}
+		],
+
+		"tool": [
+			{
+				"name": "Webpack",
+				"icon" : "fab fa-webpack"
+			},
+			{
+				"name": "Git",
+				"icon" : "fab fa-git-square"
+			},
+			{
+				"name": "Linux",
+				"icon" : "fab fa-linux"
+			}, 
+			{
+				"name": "NPM",
+				"icon": "fab fa-npm"
+			},
+			{
+				"name": "AWS",
+				"icon": "devicons devicons-aws"
+			}
+		]
+
+	}
 }

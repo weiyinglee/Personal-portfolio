@@ -1,6 +1,7 @@
 "use strict"
 
 import React from "react"
+import { skills } from "../../data"
 
 export default class Skills extends React.Component {
 	render() {
@@ -9,61 +10,58 @@ export default class Skills extends React.Component {
 		        <div className="my-auto">
 		          <h2 className="mb-5">Skills</h2>
 
-		          <div className="subheading mb-3">Programming Languages &amp; Tools</div>
+		          <div className="subheading mb-3">Programming Languages</div>
 		          <ul className="list-inline dev-icons">
-		            <li className="list-inline-item">
-		              <i className="fab fa-html5"></i>
-		            </li>
-		            <li className="list-inline-item">
-		              <i className="fab fa-css3-alt"></i>
-		            </li>
-		            <li className="list-inline-item">
-		              <i className="fab fa-js-square"></i>
-		            </li>
-		            <li className="list-inline-item">
-		              <i className="fab fa-angular"></i>
-		            </li>
-		            <li className="list-inline-item">
-		              <i className="fab fa-react"></i>
-		            </li>
-		            <li className="list-inline-item">
-		              <i className="fab fa-node-js"></i>
-		            </li>
-		            <li className="list-inline-item">
-		              <i className="fab fa-sass"></i>
-		            </li>
-		            <li className="list-inline-item">
-		              <i className="fab fa-less"></i>
-		            </li>
-		            <li className="list-inline-item">
-		              <i className="fab fa-wordpress"></i>
-		            </li>
-		            <li className="list-inline-item">
-		              <i className="fab fa-gulp"></i>
-		            </li>
-		            <li className="list-inline-item">
-		              <i className="fab fa-grunt"></i>
-		            </li>
-		            <li className="list-inline-item">
-		              <i className="fab fa-npm"></i>
-		            </li>
+		          {
+		          	skills.programming_language.map((data, index) => {
+		          		return (
+				            <li className="list-inline-item" key={index}>
+				              <i className={data.icon} title={data.name}></i>
+				            </li>
+		          		)
+		          	})
+		          }
 		          </ul>
 
-		          <div className="subheading mb-3">Workflow</div>
-		          <ul className="fa-ul mb-0">
-		            <li>
-		              <i className="fa-li fa fa-check"></i>
-		              Mobile-First, Responsive Design</li>
-		            <li>
-		              <i className="fa-li fa fa-check"></i>
-		              Cross Browser Testing &amp; Debugging</li>
-		            <li>
-		              <i className="fa-li fa fa-check"></i>
-		              Cross Functional Teams</li>
-		            <li>
-		              <i className="fa-li fa fa-check"></i>
-		              Agile Development &amp; Scrum</li>
+		          <div className="subheading mb-3">Web Design</div>
+		          <ul className="list-inline dev-icons">
+		          {
+		          	skills.web_design.map((data, index) => {
+		          		return (
+				            <li className="list-inline-item" key={index}>
+				              <i className={data.icon} title={data.name}></i>
+				            </li>
+		          		)
+		          	})
+		          }
+		          </ul>		          
+
+		          <div className="subheading mb-3">DataBase</div>
+		          <ul className="list-inline dev-icons">
+		          {
+		          	skills.database.map((data, index) => {
+		          		return (
+				            <li className="list-inline-item" key={index}>
+				              <i className={data.icon} title={data.name}></i>
+				            </li>
+		          		)
+		          	})
+		          }
 		          </ul>
+
+		          <div className="subheading mb-3">Tools</div>
+		          <ul className="list-inline dev-icons">
+		          {
+		          	skills.tool.map((data, index) => {
+		          		return (
+				            <li className="list-inline-item" key={index}>
+				              <i className={data.icon} title={data.name}></i>
+				            </li>
+		          		)
+		          	})
+		          }
+		          </ul>
+	
 		        </div>
 		    </section>
 		)

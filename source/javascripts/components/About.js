@@ -20,16 +20,16 @@ export default class About extends React.Component {
 		          <h4>Also follow me on: </h4>
 		          <div className="social-icons">
 		            <a href="https://www.linkedin.com/in/weiyinglee/">
-		              <i className="fab fa-linkedin-in"></i>
+		              <i className="fab fa-linkedin-in" title="Linkedin"></i>
 		            </a>
 		            <a href="https://www.github.com/weiyinglee">
-		              <i className="fab fa-github"></i>
+		              <i className="fab fa-github" title="GitHub"></i>
 		            </a>
 		            <a href="https://www.facebook.com/weiyinglee">
-		              <i className="fab fa-facebook-f"></i>
+		              <i className="fab fa-facebook-f" title="Facebook"></i>
 		            </a>		            
 		            <a href="https://www.instagram.com/ericleee1009">
-		              <i className="fab fa-instagram"></i>
+		              <i className="fab fa-instagram" title="Instagram"></i>
 		            </a>
 		          </div>
 		        </div>
