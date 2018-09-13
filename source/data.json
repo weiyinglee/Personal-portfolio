@@ -26,10 +26,11 @@
 	"education": [
 		{
 			"school_name": "California State Polytechnic University, Pomona",
-			"degree": "Bachelor Science",
+			"degree": "Bachelor of Science",
 			"time": "Sep 2012 - Apr 2017",
 			"major": "Computer Science",
-			"gpa": "3.30" 
+			"gpa": "3.30",
+			"course": "Java Programming; C++ Programming; Data Structures and Algorithms; Assembly Language; Computer Networking; Discrete Structures; Computer Logic; Database System; Calculus;"
 		}
 	],
 
@@ -48,12 +49,12 @@
 		{
 			"name": "Oracle Certified Professional, Java SE 7",
 			"time": "April 2014",
-			"picture": ""
+			"picture": "images/javase.png"
 		},
 		{
 			"name": "Oracle Certified Expert, Java EE 6 Web Component Developer",
 			"time": "Auguest 2017",
-			"picture": ""
+			"picture": "images/javaee.png"
 		}
 	],
 

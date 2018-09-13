@@ -1,6 +1,7 @@
 "use strict"
 
 import React from "react"
+import { education } from "../../data"
 
 export default class Education extends React.Component {
 	render() {
@@ -8,30 +9,25 @@ export default class Education extends React.Component {
 			<section className="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
 		        <div className="my-auto">
 		          <h2 className="mb-5">Education</h2>
-
-		          <div className="resume-item d-flex flex-column flex-md-row mb-5">
-		            <div className="resume-content mr-auto">
-		              <h3 className="mb-0">University of Colorado Boulder</h3>
-		              <div className="subheading mb-3">Bachelor of Science</div>
-		              <div>Computer Science - Web Development Track</div>
-		              <p>GPA: 3.23</p>
-		            </div>
-		            <div className="resume-date text-md-right">
-		              <span className="text-primary">August 2006 - May 2010</span>
-		            </div>
-		          </div>
-
-		          <div className="resume-item d-flex flex-column flex-md-row">
-		            <div className="resume-content mr-auto">
-		              <h3 className="mb-0">James Buchanan High School</h3>
-		              <div className="subheading mb-3">Technology Magnet Program</div>
-		              <p>GPA: 3.56</p>
-		            </div>
-		            <div className="resume-date text-md-right">
-		              <span className="text-primary">August 2002 - May 2006</span>
-		            </div>
-		          </div>
-
+		          {
+			          education.map((data, index) => {
+			          	return (
+				          <div className="resume-item d-flex flex-column flex-md-row mb-5" key={index}>
+				            <div className="resume-content mr-auto">
+				              <h3 className="mb-0">{data.school_name}</h3>
+				              <div className="subheading mb-3">{data.degree}</div>
+				              <div>{data.major}</div>
+				              <p>GPA: {data.gpa}</p>
+				              <h4 className="subheading">Relative Course: </h4>
+				              <p>{data.course}</p>
+				            </div>
+				            <div className="resume-date text-md-right">
+				              <span className="text-primary">{data.time}</span>
+				            </div>
+				          </div>
+			          	)
+			          })
+				  }
 		        </div>
 		   	</section>
 		)

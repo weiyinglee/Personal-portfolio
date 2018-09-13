@@ -22,6 +22,14 @@ module.exports = {
 				test: /\.json$/, 
 				loader: 'json-loader',
 				include: "/Users/ericlee/desktop/my-site/source/personal_data.json"
+			},
+			{
+				test: /\.png$/,
+				loader: 'img-loader',
+				options: {
+					presets: ['url-loader']
+				}
+
 			}
 		]
 	}
