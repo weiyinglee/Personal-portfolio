@@ -8,8 +8,8 @@ export default class About extends React.Component {
 		return (
 			<section className="resume-section p-3 p-lg-5 d-flex d-column" id="about">
 		        <div className="my-auto">
-		          <h1 className="mb-0">Who is 
-		            <span className="text-primary"> WEIYING LEE</span>
+		          <h1 className="mb-0">{about.first_name} 
+		            <span className="text-primary"> {about.last_name}</span>
 		          </h1>
 		          <div className="subheading mb-5">
 		          	<div>{about.home_address}</div>
