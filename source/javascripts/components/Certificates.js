@@ -1,17 +1,21 @@
 "use strict"
 
 import React from "react"
-import { certification } from "../../data"
+import cookie from "react-cookies"
+import { certification as certification_en } from "../../data"
+import { certification as certification_ch } from "../../data_ch"
 
 export default class Certificates extends React.Component {
 	render() {
+		const isChinese = cookie.load("isChinese")
+		const dataSet = isChinese ? certification_ch : certification_en
 		return (
-      		<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-		        <div class="my-auto">
-		          	<h2 class="mb-5">Awards &amp; Certifications</h2>
-			          	<ul class="fa-ul mb-0">
+      		<section className="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+		        <div className="my-auto">
+		          	<h2 className="mb-5">{isChinese ? "我的證照" : "Certifications" }</h2>
+			          	<ul className="fa-ul mb-0">
 			          	{
-			          		certification.map((data, index) => {
+			          		dataSet.map((data, index) => {
 			          			return (
 						          <div className="resume-item d-flex flex-column flex-md-row mb-5" key={index}>
 						            <div className="resume-content mr-auto">

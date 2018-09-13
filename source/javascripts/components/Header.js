@@ -2,31 +2,28 @@
 
 import React from "react"
 import { IndexLink, Link } from "react-router"
+import cookie  from "react-cookies"
 
-import { header } from "../../data"
+import { header as header_en } from "../../data"
+import { header as header_ch } from "../../data_ch"
 
 export default class Header extends React.Component {
 	
-	constructor() {
-		super()
-		this.state = {
-			isChinese: false
-		}
-	}
-
 	changeLanguage() {
-		this.setState({
-			isChinese: !this.state.isChinese
-		})
+		if(cookie.load("isChinese")) {
+			cookie.remove("isChinese")
+		}else {
+			cookie.save("isChinese", true)
+		}
+		location.reload()
 	}
 
 	render() {
-
-		const ch = this.state.isChinese
-
+		const isChinese = cookie.load("isChinese")
+		const dataSet = isChinese ? header_ch : header_en
 		return (
 			<nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-			  <button className="btn btn-light" onClick={this.changeLanguage.bind(this)}>{ch ? "English Version" : "中文版本"}</button>
+			  <button className="btn btn-light" onClick={this.changeLanguage.bind(this)}>{ isChinese ? "English Version" : "中文版本"}</button>
 		      <Link className="navbar-brand js-scroll-trigger" to="about">
 		        <span className="d-block d-lg-none">WeiYing Lee</span>
 		        
@@ -40,14 +37,13 @@ export default class Header extends React.Component {
 		      <div className="collapse navbar-collapse" id="navbarSupportedContent">
 		        <ul className="navbar-nav">
 		        {
-		        	header.map((data, index) => {
+		        	dataSet.map((data, index) => {
 		        		return (
 				          <li className="nav-item" key={index}>
 				            <Link className="nav-link js-scroll-trigger" to={data.link}>{data.page}</Link>
 				          </li>		        			
 		        		)
 		        	})
-
 		        }
 		        </ul>
 		      </div>

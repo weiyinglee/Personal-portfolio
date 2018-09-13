@@ -1,0 +1,200 @@
+{
+	"header": [
+		{
+			"page": "關於我",
+			"link": "about"
+		},
+		{
+			"page": "我的學歷",
+			"link": "education"
+		},
+		{
+			"page": "工作經驗",
+			"link": "experience"
+		},
+		{
+			"page": "我的作品",
+			"link": "projects"
+		},
+		{
+			"page": "技能工具",
+			"link": "skills"
+		},
+		{
+			"page": "我的證照",
+			"link": "certificates"
+		}
+	],
+
+	"about": {
+		"first_name": "李",
+		"last_name": "威影",
+		"home_address": "台中市北屯區安順東八街49-3號",
+		"phone_number": "(409)779-6046",
+		"email_address": "weiyinglee1009@yahoo.com",
+		"description": "我的名字是Eric，我對網頁的前端以及後端開發相當有興趣，目前希望能投入網頁開發相關的工作"
+	},
+
+	"experience": [
+		{
+			"company_name": "NASA JPL SIRI Program",
+			"title": "網頁實習工程師",
+			"time": "Jan 2016 - Apr 2016",
+			"description": "將現有NASA JPL的Web App前端增加更多功能以及優化網頁介面"
+		},
+		{
+			"company_name": "Habey USA",
+			"title": "技術員助手",
+			"time": "Jun 2012 - Mar 2013",
+			"description": "組裝以及包裝工業電腦主機，測試其性能還有設定bios等工作"
+		}
+	],
+
+	"education": [
+		{
+			"school_name": "加州州立理工大學, 波莫納分校",
+			"degree": "理學士學位",
+			"time": "Sep 2012 - Apr 2017",
+			"major": "電腦資訊工程",
+			"gpa": "3.30",
+			"course": "Java 程式語言; C++程式語言; 資料結構以及演算法; 機械語言; 電腦網路; 資料庫架構; 微積分;"
+		}
+	],
+
+	"projects": [		
+		{
+			"name": "個人網站",
+			"description": "用MERN Stack去架設從前端到後端的個人網站，擁有管理者管理及修改網頁內容的功能(CRUD)，同時也提供用戶登入留言的功能",
+			"tools": "HTML, React Redux, SASS, Bootstrap, Node.js, Express.js, MySQL",
+			"picture": "images/personal_site.png"
+		},
+		{
+			"name": "Radar for Life",
+			"description": "為NASA JPL的災害偵測計畫去架設MVC架構的網頁應用程式",
+			"tools": "HTML, Angular 1, Leaflet.js, SASS",
+			"picture": "images/radar4life.png"
+		},
+		{
+			"name": "客製化Chrome Extension",
+			"description": "開發一個可以製作客製化New Tab的Chrome Extension，使用者ㄋ可以任意更改New Tab的背景以及使用記事等功能",
+			"tools": "HTML, React.js, SASS",
+			"picture": "images/chrome_extension.png"
+		},
+		{
+			"name": "簡易部落格",
+			"description": "利用MEAN Stack去架設從前端到後端的簡易部落格，擁有著基本登入認證以及留言的功能",
+			"tools": "HTML/CSS, MongoDB, Bootstrap, Angular.js, Node.js, Express.js",
+			"picture": "images/simple_blog.png"
+		},
+		{
+			"name": "學生應用網頁",
+			"description": "自製網頁應用程式，提供學生使用者紀錄自己的課程表以及記事和計算總成績等功能",
+			"tools": "HTML, Bootstrap, Ruby on Rails",
+			"picture": "images/student_tool_site.png"
+		}
+	],
+
+	"certification": [
+		{
+			"name": "Oracle Certified Professional, Java SE 7",
+			"time": "April 2014",
+			"picture": "images/javase.png"
+		},
+		{
+			"name": "Oracle Certified Expert, Java EE 6 Web Component Developer",
+			"time": "Auguest 2017",
+			"picture": "images/javaee.png"
+		}
+	],
+
+	"skills": {
+		"programming_language": [
+			{
+				"name": "Java",
+				"icon" : "fab fa-java"
+			},
+			{
+				"name": "JavaScript",
+				"icon" : "fab fa-js-square"
+			},
+			{
+				"name": "JQuery",
+				"icon" : "devicons devicons-jquery"
+			},
+			{
+				"name": "Node.js",
+				"icon" : "fab fa-node"
+			},
+			{
+				"name": "Express.js",
+				"icon" : "fab fa-express-js"
+			},
+			{
+				"name": "Angular 1",
+				"icon" : "fab fa-angular"
+			},
+			{
+				"name": "React.js",
+				"icon" : "fab fa-react"
+			}
+		],
+
+		"web_design": [
+			{
+				"name": "HTML5",
+				"icon" : "fab fa-html5"
+			},
+			{
+				"name": "CSS3",
+				"icon" : "fab fa-css3-alt"
+			},
+			{
+				"name": "SASS",
+				"icon" : "fab fa-sass"
+			},
+			{
+				"name": "BootStrap",
+				"icon" : "devicons devicons-bootstrap"
+			}, 
+			{
+				"name": "WordPress",
+				"icon": "fab fa-wordpress"
+			}
+		],
+
+		"database": [
+			{
+				"name": "MongoDB",
+				"icon" : "devicons devicons-mongodb"
+			},
+			{
+				"name": "MySQL",
+				"icon" : "devicons devicons-mysql"
+			}
+		],
+
+		"tool": [
+			{
+				"name": "Webpack",
+				"icon" : "fab fa-webpack"
+			},
+			{
+				"name": "Git",
+				"icon" : "fab fa-git-square"
+			},
+			{
+				"name": "Linux",
+				"icon" : "fab fa-linux"
+			}, 
+			{
+				"name": "NPM",
+				"icon": "fab fa-npm"
+			},
+			{
+				"name": "AWS",
+				"icon": "devicons devicons-aws"
+			}
+		]
+
+	}
+}

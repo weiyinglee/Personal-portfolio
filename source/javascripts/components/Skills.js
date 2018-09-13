@@ -1,19 +1,23 @@
 "use strict"
 
 import React from "react"
-import { skills } from "../../data"
+import cookie from "react-cookies"
+import { skills as skills_en } from "../../data"
+import { skills as skills_ch } from "../../data_ch"
 
 export default class Skills extends React.Component {
 	render() {
+		const isChinese = cookie.load("isChinese")
+		const dataSet = isChinese ? skills_ch : skills_en
 		return (
 		    <section className="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
 		        <div className="my-auto">
-		          <h2 className="mb-5">Skills</h2>
+		          <h2 className="mb-5">{ isChinese ? "技能工具" : "Skills"}</h2>
 
-		          <div className="subheading mb-3">Programming Languages</div>
+		          <div className="subheading mb-3">{ isChinese ? "程式語言" : "Programming Languages"}</div>
 		          <ul className="list-inline dev-icons">
 		          {
-		          	skills.programming_language.map((data, index) => {
+		          	dataSet.programming_language.map((data, index) => {
 		          		return (
 				            <li className="list-inline-item" key={index}>
 				              <i className={data.icon} title={data.name}></i>
@@ -23,10 +27,10 @@ export default class Skills extends React.Component {
 		          }
 		          </ul>
 
-		          <div className="subheading mb-3">Web Design</div>
+		          <div className="subheading mb-3">{ isChinese ? "網頁設計" : "Web Design"}</div>
 		          <ul className="list-inline dev-icons">
 		          {
-		          	skills.web_design.map((data, index) => {
+		          	dataSet.web_design.map((data, index) => {
 		          		return (
 				            <li className="list-inline-item" key={index}>
 				              <i className={data.icon} title={data.name}></i>
@@ -36,10 +40,10 @@ export default class Skills extends React.Component {
 		          }
 		          </ul>		          
 
-		          <div className="subheading mb-3">DataBase</div>
+		          <div className="subheading mb-3">{ isChinese ? "資料庫" : "DataBase"}</div>
 		          <ul className="list-inline dev-icons">
 		          {
-		          	skills.database.map((data, index) => {
+		          	dataSet.database.map((data, index) => {
 		          		return (
 				            <li className="list-inline-item" key={index}>
 				              <i className={data.icon} title={data.name}></i>
@@ -49,10 +53,10 @@ export default class Skills extends React.Component {
 		          }
 		          </ul>
 
-		          <div className="subheading mb-3">Tools</div>
+		          <div className="subheading mb-3">{ isChinese ? "其他工具" : "Tools"}</div>
 		          <ul className="list-inline dev-icons">
 		          {
-		          	skills.tool.map((data, index) => {
+		          	dataSet.tool.map((data, index) => {
 		          		return (
 				            <li className="list-inline-item" key={index}>
 				              <i className={data.icon} title={data.name}></i>

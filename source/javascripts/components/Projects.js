@@ -1,16 +1,20 @@
 "use strict"
 
 import React from "react"
-import { projects } from "../../data"
+import cookie from "react-cookies"
+import { projects as projects_en } from "../../data"
+import { projects as projects_ch } from "../../data_ch"
 
 export default class Projects extends React.Component {
 	render() {
+		const isChinese = cookie.load("isChinese")
+		const dataSet = isChinese ? projects_ch : projects_en
 		return (
 		    <section className="resume-section p-3 p-lg-5 d-flex flex-column" id="project">
 		        <div className="my-auto">
-		          <h2 className="mb-5">Projects</h2>
+		          <h2 className="mb-5">{isChinese ? "我的作品" : "Projects"}</h2>
 		          	{
-			          projects.map((data, index) => {
+			          dataSet.map((data, index) => {
 			          	return (
 				          <div className="resume-item d-flex flex-column flex-md-row mb-5" key={index}>
 				            <div className="resume-content mr-auto">
