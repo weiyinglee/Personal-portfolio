@@ -1,4 +1,31 @@
 {
+	"header": [
+		{
+			"page": "About",
+			"link": "about"
+		},
+		{
+			"page": "Education",
+			"link": "education"
+		},
+		{
+			"page": "Experience",
+			"link": "experience"
+		},
+		{
+			"page": "Projects",
+			"link": "projects"
+		},
+		{
+			"page": "Skills",
+			"link": "skills"
+		},
+		{
+			"page": "Certification",
+			"link": "certificates"
+		}
+	],
+
 	"about": {
 		"first_name": "WeiYing",
 		"last_name": "Lee",
