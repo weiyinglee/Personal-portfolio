@@ -34,36 +34,36 @@
 		}
 	],
 
-	"projects": [
-		{
-			"name": "Radar for Life",
-			"description": "Front-end development for creating a MVC application for damage detection map which is as a part of NASA’s Disasters program project.",
-			"tools": "HTML, Angular 1, Leaflet.js, SASS",
-			"picture": ""
-		},
+	"projects": [		
 		{
 			"name": "Personal Site",
 			"description": "Created a website for personal portfolio by scratch for both frontend and backend. The website includes the functionalities for an admin to edit and control the page (CRUD). It also provides user to login/register account to leave messages on the website.",
 			"tools": "HTML, React Redux, SASS, Bootstrap, Node.js, Express.js, MySQL",
-			"picture": ""
+			"picture": "images/personal_site.png"
+		},
+		{
+			"name": "Radar for Life",
+			"description": "Front-end development for creating a MVC application for damage detection map which is as a part of NASA’s Disasters program project.",
+			"tools": "HTML, Angular 1, Leaflet.js, SASS",
+			"picture": "images/radar4life.png"
 		},
 		{
 			"name": "Custom new tab chrome extension",
 			"description": "Created a chrome extension using chrome API which user can use the panel to customize the background of new tab in Google Chrome.",
 			"tools": "HTML, React.js, SASS",
-			"picture": ""
+			"picture": "images/chrome_extension.png"
 		},
 		{
 			"name": "Simple blog site",
 			"description": "Created a simple blog application with both server side and front-end, having simple user authentication/authorization and post message on the site using RESTful APIs.",
 			"tools": "HTML/CSS, MongoDB, Bootstrap, Angular.js, Node.js, Express.js",
-			"picture": ""
+			"picture": "images/simple_blog.png"
 		},
 		{
 			"name": "Student Tool site",
 			"description": "Created a web application for users to keep track the class schedule, keep personal notes, and calculate average GPA.",
 			"tools": "HTML, Bootstrap, Ruby on Rails",
-			"picture": ""
+			"picture": "images/student_tool_site.png"
 		}
 	],
 
