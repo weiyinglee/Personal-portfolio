@@ -1,11 +1,13 @@
 module.exports = {
-	mode: 'development',
 	watchOptions: {
   		poll: true
 	},
-	entry: "/Users/ericlee/desktop/my-site/public/javascripts/app.js",
+	devServer: {
+		historyApiFallback: true,
+	},
+	entry: "/Users/ericlee/desktop/my-site/src/index.js",
 	output: {
-		path: "/Users/ericlee/desktop/my-site/public/javascripts/",
+		path: "/Users/ericlee/desktop/my-site/src/",
 		filename: 'bundle.js'
 	},
 	module: {
@@ -17,11 +19,6 @@ module.exports = {
 					presets: ['babel-preset-es2015','babel-preset-react']
 				},
 				exclude: /node_modules/
-			},
-			{
-				test: /\.json$/, 
-				loader: 'json-loader',
-				include: "/Users/ericlee/desktop/my-site/public/personal_data.json"
 			},
 			{
 				test: /\.png$/,

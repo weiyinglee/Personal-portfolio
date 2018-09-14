@@ -4,13 +4,13 @@ import React from "react"
 import ReactDOM from "react-dom"
 import { Router, Route, IndexRoute, browserHistory, Redirect } from "react-router"
 
-import Layout from "./components/Layout"
-import About from "./components/About"
-import Education from "./components/Education"
-import Experience from "./components/Experience"
-import Projects from "./components/Projects"
-import Certificates from "./components/Certificates"
-import Skills from "./components/Skills"
+import Layout from "./javascripts/components/Layout"
+import About from "./javascripts/components/About"
+import Education from "./javascripts/components/Education"
+import Experience from "./javascripts/components/Experience"
+import Projects from "./javascripts/components/Projects"
+import Certificates from "./javascripts/components/Certificates"
+import Skills from "./javascripts/components/Skills"
 
 const app = document.getElementById("app")
 

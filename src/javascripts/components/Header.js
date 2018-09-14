@@ -15,7 +15,7 @@ export default class Header extends React.Component {
 		}else {
 			cookie.save("isChinese", true)
 		}
-		location.reload()
+		window.location.reload()
 	}
 
 	render() {
