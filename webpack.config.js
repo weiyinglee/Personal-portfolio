@@ -3,9 +3,9 @@ module.exports = {
 	watchOptions: {
   		poll: true
 	},
-	entry: "/Users/ericlee/desktop/my-site/source/javascripts/app.js",
+	entry: "/Users/ericlee/desktop/my-site/public/javascripts/app.js",
 	output: {
-		path: "/Users/ericlee/desktop/my-site/source/javascripts/",
+		path: "/Users/ericlee/desktop/my-site/public/javascripts/",
 		filename: 'bundle.js'
 	},
 	module: {
@@ -21,7 +21,7 @@ module.exports = {
 			{
 				test: /\.json$/, 
 				loader: 'json-loader',
-				include: "/Users/ericlee/desktop/my-site/source/personal_data.json"
+				include: "/Users/ericlee/desktop/my-site/public/personal_data.json"
 			},
 			{
 				test: /\.png$/,

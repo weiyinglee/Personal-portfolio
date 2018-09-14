@@ -2,21 +2,27 @@
   "name": "personal_website",
   "version": "1.0.0",
   "description": "This is my personal website",
+  "homepage": "https://weiyinglee.github.io/My-Site/",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --content-base source/ --process --incline --hot --history-api-fallback",
     "start": "webpack",
-    "start-watch": "webpack --watch"
+    "start-watch": "webpack --watch",
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^1.2.0",
     "react": "^16.5.0",
     "react-cookie": "^3.0.4",
     "react-cookies": "^0.1.0",
     "react-dom": "^16.5.0",
-    "react-router": "^3.2.1"
+    "react-router": "^3.2.1",
+    "react-scripts": "^1.1.5"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
