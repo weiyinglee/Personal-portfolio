@@ -28535,7 +28535,7 @@ var Header = function (_React$Component) {
 			} else {
 				_reactCookies2.default.save("isChinese", true);
 			}
-			location.reload();
+			window.location.reload();
 		}
 	}, {
 		key: "render",
@@ -28561,7 +28561,7 @@ var Header = function (_React$Component) {
 					_react2.default.createElement(
 						"span",
 						{ className: "d-none d-lg-block" },
-						_react2.default.createElement("img", { className: "img-fluid img-profile rounded-circle mx-auto mb-2", src: "../../images/profile.jpg", alt: "" })
+						_react2.default.createElement("img", { className: "img-fluid img-profile rounded-circle mx-auto mb-2", src: "../../../public/images/profile.jpg", alt: "" })
 					)
 				),
 				_react2.default.createElement(
@@ -29227,7 +29227,7 @@ var Projects = function (_React$Component) {
 									null,
 									data.description
 								),
-								_react2.default.createElement("img", { className: "img-fluid mx-auto", src: "../../" + data.picture })
+								_react2.default.createElement("img", { className: "img-fluid mx-auto", src: "../../../public/" + data.picture })
 							),
 							_react2.default.createElement("div", { className: "resume-date text-md-right" })
 						);

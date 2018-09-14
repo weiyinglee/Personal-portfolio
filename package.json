@@ -2,7 +2,7 @@
   "name": "personal_website",
   "version": "1.0.0",
   "description": "This is my personal website",
-  "homepage": "https://weiyinglee.github.io/Personal-portfolio/",
+  "homepage": "https://weiyinglee.github.io/Personal-portfolio",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,7 +10,7 @@
     "start": "webpack",
     "start-watch": "webpack --watch",
     "build": "react-scripts build",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build -- --assets \"https://weiyinglee.github.io/Personal-portfolio/\"",
     "deploy": "gh-pages -d build"
   },
   "author": "",
