@@ -26,6 +26,7 @@ export default class Header extends React.Component {
 		)
 		return (
 			<nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+			  {chineseBtn}
 		      <Link className="navbar-brand js-scroll-trigger" to="about">
 		        <span className="d-block d-lg-none">WeiYing Lee</span>
 		        
