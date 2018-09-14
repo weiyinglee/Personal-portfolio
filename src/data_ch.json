@@ -66,31 +66,31 @@
 			"name": "個人網站",
 			"description": "用MERN Stack去架設從前端到後端的個人網站，擁有管理者管理及修改網頁內容的功能(CRUD)，同時也提供用戶登入留言的功能",
 			"tools": "HTML, React Redux, SASS, Bootstrap, Node.js, Express.js, MySQL",
-			"picture": "images/personal_site.png"
+			"picture": "personal_site.png"
 		},
 		{
 			"name": "Radar for Life",
 			"description": "為NASA JPL的災害偵測計畫去架設MVC架構的網頁應用程式",
 			"tools": "HTML, Angular 1, Leaflet.js, SASS",
-			"picture": "images/radar4life.png"
+			"picture": "radar4life.png"
 		},
 		{
 			"name": "客製化Chrome Extension",
 			"description": "開發一個可以製作客製化New Tab的Chrome Extension，使用者可以任意更改New Tab的背景以及使用記事等功能",
 			"tools": "HTML, React.js, SASS",
-			"picture": "images/chrome_extension.png"
+			"picture": "chrome_extension.png"
 		},
 		{
 			"name": "簡易部落格",
 			"description": "利用MEAN Stack去架設從前端到後端的簡易部落格，擁有著基本登入認證以及留言的功能",
 			"tools": "HTML/CSS, MongoDB, Bootstrap, Angular.js, Node.js, Express.js",
-			"picture": "images/simple_blog.png"
+			"picture": "simple_blog.png"
 		},
 		{
 			"name": "學生應用網頁",
 			"description": "自製網頁應用程式，提供學生使用者紀錄自己的課程表以及記事和計算總成績等功能",
 			"tools": "HTML, Bootstrap, Ruby on Rails",
-			"picture": "images/student_tool_site.png"
+			"picture": "student_tool_site.png"
 		}
 	],
 
@@ -98,12 +98,12 @@
 		{
 			"name": "Oracle Certified Professional, Java SE 7",
 			"time": "April 2014",
-			"picture": "images/javase.png"
+			"picture": "javase.png"
 		},
 		{
 			"name": "Oracle Certified Expert, Java EE 6 Web Component Developer",
 			"time": "Auguest 2017",
-			"picture": "images/javaee.png"
+			"picture": "javaee.png"
 		}
 	],
 

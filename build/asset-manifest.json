@@ -1,4 +1,12 @@
 {
-  "main.js": "static/js/main.2f2a16d2.js",
-  "main.js.map": "static/js/main.2f2a16d2.js.map"
+  "main.js": "static/js/main.490ad48d.js",
+  "main.js.map": "static/js/main.490ad48d.js.map",
+  "static/media/chrome_extension.png": "static/media/chrome_extension.3a367985.png",
+  "static/media/javaee.png": "static/media/javaee.955863c0.png",
+  "static/media/javase.png": "static/media/javase.efd3f4af.png",
+  "static/media/personal_site.png": "static/media/personal_site.ce8ae893.png",
+  "static/media/profile.jpg": "static/media/profile.0c221a11.jpg",
+  "static/media/radar4life.png": "static/media/radar4life.33530b5a.png",
+  "static/media/simple_blog.png": "static/media/simple_blog.78c0464e.png",
+  "static/media/student_tool_site.png": "static/media/student_tool_site.42e30250.png"
 }

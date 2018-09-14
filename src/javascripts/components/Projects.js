@@ -21,7 +21,7 @@ export default class Projects extends React.Component {
 				              <h3 className="mb-0">{data.name}</h3>
 				              <div className="subheading mb-3">{data.tools}</div>
 				              <p>{data.description}</p>
-				              <img className="img-fluid mx-auto" src={`../../../public/${data.picture}`}/>
+				              <img className="img-fluid mx-auto" src={require(`../../images/${data.picture}`)}/>
 				            </div>
 				            <div className="resume-date text-md-right">
 				              

@@ -1,9 +1,14 @@
+const path = require('path')
+
 module.exports = {
 	watchOptions: {
   		poll: true
 	},
 	devServer: {
 		historyApiFallback: true,
+	},
+	output: {
+		publicPath: "./"
 	},
 	entry: "/Users/ericlee/desktop/my-site/src/index.js",
 	output: {
@@ -21,10 +26,10 @@ module.exports = {
 				exclude: /node_modules/
 			},
 			{
-				test: /\.png$/,
-				loader: 'img-loader',
+				test: /\.(jpe?g|png|gif|svg)$/i,
+				loader: 'url-loader',
 				options: {
-					presets: ['url-loader']
+					presets: ['img-loader', 'file-loader']
 				}
 
 			}, 

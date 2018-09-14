@@ -20,7 +20,7 @@ export default class Certificates extends React.Component {
 						          <div className="resume-item d-flex flex-column flex-md-row mb-5" key={index}>
 						            <div className="resume-content mr-auto">
 						              <div className="subheading">{data.name}</div>
-						              <img height="100" width="100" src={`../../${data.picture}`}/>
+						              <img height="100" width="100" src={require(`../../images/${data.picture}`)}/>
 						            </div>
 						            <div className="resume-date text-md-right">
 						              <span className="text-primary">{data.time}</span>
