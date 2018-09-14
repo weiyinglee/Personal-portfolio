@@ -8,7 +8,8 @@ module.exports = {
 		historyApiFallback: true,
 	},
 	output: {
-		publicPath: "./"
+		path: path.resolve(__dirname, "/"),
+		publicPath: "/static/media/"
 	},
 	entry: "/Users/ericlee/desktop/my-site/src/index.js",
 	output: {
