@@ -31,7 +31,7 @@ export default class Header extends React.Component {
 		        <span className="d-block d-lg-none">WeiYing Lee</span>
 		        
 		        <span className="d-none d-lg-block">
-		          <img className="img-fluid img-profile rounded-circle mx-auto mb-2" src={require("../../images/profile.jpg")} alt=""/>
+		          <img className="img-fluid img-profile rounded-circle mx-auto mb-2" src={require("../../images/profile.jpg")} alt="WeiYing Lee"/>
 		        </span>
 		      </Link>
 		      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
