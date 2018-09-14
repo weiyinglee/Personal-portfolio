@@ -1,7 +1,7 @@
 "use strict"
 
 import React from "react"
-import { Link } from "react-router-dom"
+import { Link } from "react-router"
 import cookie  from "react-cookies"
 
 import { header as header_en } from "../../data"
@@ -21,9 +21,11 @@ export default class Header extends React.Component {
 	render() {
 		const isChinese = cookie.load("isChinese")
 		const dataSet = isChinese ? header_ch : header_en
+		const chineseBtn = (
+			<button className="btn btn-light" onClick={this.changeLanguage.bind(this)}>{ isChinese ? "English Version" : "中文版本"}</button>
+		)
 		return (
 			<nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-			  <button className="btn btn-light" onClick={this.changeLanguage.bind(this)}>{ isChinese ? "English Version" : "中文版本"}</button>
 		      <Link className="navbar-brand js-scroll-trigger" to="about">
 		        <span className="d-block d-lg-none">WeiYing Lee</span>
 		        
