@@ -1,7 +1,7 @@
 "use strict"
 
 import React from "react"
-import { IndexLink, Link } from "react-router"
+import { Link } from "react-router-dom"
 import cookie  from "react-cookies"
 
 import { header as header_en } from "../../data"
