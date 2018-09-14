@@ -2,7 +2,7 @@
 
 import React from "react"
 import ReactDOM from "react-dom"
-import { Router, Route, IndexRoute, browserHistory, Redirect } from "react-router"
+import { Router, Route, IndexRoute, hashHistory, Redirect } from "react-router"
 
 import Layout from "./javascripts/components/Layout"
 import About from "./javascripts/components/About"
@@ -15,14 +15,14 @@ import Skills from "./javascripts/components/Skills"
 const app = document.getElementById("app")
 
 ReactDOM.render(
-	<Router history={browserHistory}>
+	<Router history={hashHistory}>
 	    <Route path="/" component={Layout}>
 	      	<IndexRoute component={About}></IndexRoute>
-	     	<Route path={process.env.PUBLIC_URL + 'education'} name="Education" component={Education}></Route>
-	      	<Route path={process.env.PUBLIC_URL + "experience"} name="Experience" component={Experience}></Route>
-	      	<Route path={process.env.PUBLIC_URL + "projects"} name="Projects" component={Projects}></Route>
-	      	<Route path={process.env.PUBLIC_URL + "certificates"} name="Certificates" component={Certificates}></Route>
-	     	<Route path={process.env.PUBLIC_URL + "skills"} name="Skills" component={Skills}></Route>
+	     	<Route path="education" name="Education" component={Education}></Route>
+	      	<Route path="experience" name="Experience" component={Experience}></Route>
+	      	<Route path="projects" name="Projects" component={Projects}></Route>
+	      	<Route path="certificates" name="Certificates" component={Certificates}></Route>
+	     	<Route path="skills" name="Skills" component={Skills}></Route>
 	      	<Redirect from="*" to="/" />
 	    </Route>
   	</Router>
