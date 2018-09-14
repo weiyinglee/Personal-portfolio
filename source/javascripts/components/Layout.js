@@ -7,7 +7,7 @@ import Header from "./Header"
 export default class Layout extends React.Component {
 	render() {
 		return (
-			<div>
+			<div className="unselectableText">
 				<Header />
 				<div className="container-fluid p-0">
 					{this.props.children}

@@ -76,7 +76,7 @@
 		},
 		{
 			"name": "客製化Chrome Extension",
-			"description": "開發一個可以製作客製化New Tab的Chrome Extension，使用者ㄋ可以任意更改New Tab的背景以及使用記事等功能",
+			"description": "開發一個可以製作客製化New Tab的Chrome Extension，使用者可以任意更改New Tab的背景以及使用記事等功能",
 			"tools": "HTML, React.js, SASS",
 			"picture": "images/chrome_extension.png"
 		},

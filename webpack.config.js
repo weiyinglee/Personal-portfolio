@@ -30,6 +30,13 @@ module.exports = {
 					presets: ['url-loader']
 				}
 
+			}, 
+			{
+				test: /\.scss$/,
+				loader: 'style-loader',
+				options: {
+					presets: ['css-loader', 'sass-loader']
+				}
 			}
 		]
 	}
